@@ -5,8 +5,8 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaGlobe, FaFacebook, FaInstagram, FaWhatsap
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b text-white overflow-x-hidden">
-      <div className="px-6 py-12">
+    <div className="min-h-full bg-gradient-to-b text-white overflow-x-hidden">
+      <div className="px-6 py-8">
         <h1 className={`${irishGrover.className} text-4xl text-center font-bold mb-10`}>
           VISIT OUR OFFLINE STORE
         </h1>
@@ -43,7 +43,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <footer className="bg-white text-black text-sm mt-16 w-full">
+      <footer className="bg-white text-black text-sm mt-20 w-full">
         <div className="px-6 py-3 mx-auto md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-4 mb-2 md:mb-0">
