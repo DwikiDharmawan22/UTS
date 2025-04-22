@@ -38,7 +38,7 @@ export default function CenterNavOwner() {
   // Confirm logout and navigate
   const confirmLogout = () => {
     setShowLogoutPopup(false);
-    router.push('/logout');
+    router.push('/');
   };
 
   // Cancel logout
