@@ -115,7 +115,7 @@ export default function CenterNavOwner() {
       {/* Logout Confirmation Popup */}
       {showLogoutPopup && (
         <div className="fixed inset-0 flex items-end justify-center bg-white bg-opacity-30 backdrop-blur-sm z-50">
-          <div className="bg-white rounded-t-lg shadow-lg w-full max-w-md p-4">
+          <div className="bg-white rounded-t-lg shadow-lg w-full p-4">
             <p className="text-center text-lg font-semibold py-4 border-b border-gray-300 uppercase">
               Anda yakin ingin LOGOUT?
             </p>
