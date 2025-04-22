@@ -21,7 +21,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG DWIKI</h3>
             <a href="/dashboard/product" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
             
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG JESICA</h3>
             <a href="/dashboard/product/product2" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
             
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <a 
               href="/dashboard/product/product3" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
           {/* Product Card 4 - TOPENG CICILIA 2 */}
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG CICILIA</h3>
             <a href="/dashboard/product" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG DWIKI</h3>
             <a href="/dashboard/product" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
             
@@ -116,7 +116,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG JESICA</h3>
             <a href="/dashboard/product/product2" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
             
@@ -135,7 +135,7 @@ export default function AboutPage() {
             <a 
               href="/dashboard/product/product3" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
           {/* Product Card 4 - TOPENG CICILIA 2 */}
@@ -152,7 +152,7 @@ export default function AboutPage() {
             <h3 className={`${creepster.className} text-[#6A1E55] text-xl font-semibold mb-3`}>TOPENG CICILIA</h3>
             <a href="/dashboard/product" 
               className={`${creepster.className} rounded-2xl bg-[#6A1E55] text-white w-32 hover:underline flex items-center justify-center text-lg mx-auto`}>
-              SEE MORE <span className="ml-2">>>></span>
+              SEE MORE <span className="ml-2">&gt;&gt;&gt;</span>
             </a>
           </div>
         </div>
