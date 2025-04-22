@@ -4,23 +4,35 @@ import { useState } from 'react';
 import { cousine } from '@/app/ui/fonts';
 import { ClipboardDocumentIcon } from '@heroicons/react/24/outline';
 
+// Define the shape of the form data
+interface ProductFormData {
+  id: string;
+  name: string;
+  price: string;
+  image: File | null;
+}
+
 export default function AddProductPage() {
   const router = useRouter();
-  const [formData, setFormData] = useState({
+
+  // Initialize form state with TypeScript type
+  const [formData, setFormData] = useState<ProductFormData>({
     id: '',
     name: '',
     price: '',
     image: null,
   });
 
-  const handleSubmit = (e) => {
+  // Handle form submission
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('New product:', formData);
     alert('Product added successfully!');
     router.push('/products');
   };
 
-  const handleInputChange = (e) => {
+  // Handle text input changes
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -28,10 +40,12 @@ export default function AddProductPage() {
     }));
   };
 
-  const handleImageChange = (e) => {
+  // Handle image file input changes
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] || null; // Safely access the first file
     setFormData((prev) => ({
       ...prev,
-      image: e.target.files[0],
+      image: file,
     }));
   };
 
@@ -50,7 +64,7 @@ export default function AddProductPage() {
 
         <form onSubmit={handleSubmit}>
           {/* Form Fields */}
-          <div className="grid grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Nama Produk */}
             <div>
               <label className="block text-2xl text-white mb-3">Nama Produk</label>
@@ -118,9 +132,7 @@ export default function AddProductPage() {
                 </p>
               </label>
             </div>
-            <p className="text-white text-lg mt-3">
-              PNG, JPG, batas 7MB
-            </p>
+            <p className="text-white text-lg mt-3">PNG, JPG, batas 7MB</p>
           </div>
 
           {/* Buttons */}

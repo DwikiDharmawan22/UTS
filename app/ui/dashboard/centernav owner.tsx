@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import NavLinksOwner from '@/app/ui/dashboard/nav-links owner';
 import Image from 'next/image';
@@ -9,12 +10,17 @@ import { useRouter } from 'next/navigation';
 export default function CenterNavOwner() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogoutPopup, setShowLogoutPopup] = useState(false);
-  const dropdownRef = useRef(null);
+  // Type the ref as HTMLDivElement or null
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
 
+  // Handle clicks outside the dropdown to close it
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     }
@@ -22,17 +28,20 @@ export default function CenterNavOwner() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleLogoutClick = (e) => {
+  // Handle logout click with event typing
+  const handleLogoutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setShowLogoutPopup(true);
     setIsOpen(false);
   };
 
+  // Confirm logout and navigate
   const confirmLogout = () => {
     setShowLogoutPopup(false);
     router.push('/logout');
   };
 
+  // Cancel logout
   const cancelLogout = () => {
     setShowLogoutPopup(false);
   };
@@ -74,7 +83,9 @@ export default function CenterNavOwner() {
           />
           <span className="text-white">Pegawai</span>
           <ChevronDownIcon
-            className={`w-4 text-white transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-4 text-white transition-transform ${
+              isOpen ? 'rotate-180' : ''
+            }`}
           />
         </div>
 
@@ -104,7 +115,7 @@ export default function CenterNavOwner() {
       {/* Logout Confirmation Popup */}
       {showLogoutPopup && (
         <div className="fixed inset-0 flex items-end justify-center bg-white bg-opacity-30 backdrop-blur-sm z-50">
-          <div className="bg-white rounded-t-lg shadow-lg w-full p-4">
+          <div className="bg-white rounded-t-lg shadow-lg w-full max-w-md p-4">
             <p className="text-center text-lg font-semibold py-4 border-b border-gray-300 uppercase">
               Anda yakin ingin LOGOUT?
             </p>
