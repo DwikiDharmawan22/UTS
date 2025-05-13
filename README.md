@@ -17,3 +17,4 @@ Pembagian Tugas:
 3. Jesica Fretty Sihombing: mengerjakan codingan website pada bagian landing page, login, register, dan lupa password.
 # nextjs-dashboardubu
 # nextjs-dashboardubu
+# nextjs-dashboard1
